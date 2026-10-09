@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CurDeepSeek — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --ink: #1a1c1e;
+      --muted: #4a5058;
+      --line: #d5d0c6;
+      --accent: #0b5fff;
+      --card: #fffefb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Candara", "Calibri", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e8f0ff 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #efe8d8 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .lede { color: var(--muted); margin: 0 0 1.75rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1.25rem;
+    }
+    p, li { color: var(--ink); }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    .meta {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.35rem 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
+    nav a { margin-right: 1rem; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p class="meta">Last updated: 2026-10-09 · Product: CurDeepSeek (Windows desktop)</p>
+    <h1>Privacy Policy</h1>
+    <p class="lede">
+      This page describes how CurDeepSeek handles data on your device and what leaves your machine
+      when you use AI features. It matches the Microsoft Store listing claims for the product.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>Your <strong>DeepSeek API key</strong> is stored <strong>locally</strong> in Windows Credential Manager on your PC.</li>
+      <li>App settings, chat history, and related state live in a local SQLite database under your user profile.</li>
+      <li>CurDeepSeek does <strong>not</strong> run invented product telemetry or upload crash dumps by default.</li>
+      <li>When you use chat, agent, Composer, or inline AI, prompts and completions are sent to the <strong>DeepSeek API</strong> (or the API base URL you configure).</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <ul>
+      <li><strong>API key</strong> — Windows Credential Manager entry for CurDeepSeek / DeepSeek (local only).</li>
+      <li><strong>Settings &amp; sessions</strong> — SQLite under <code>%LOCALAPPDATA%\CurDeepSeek</code> (preferences, recent workspaces, chat turns, agent run metadata, permissions allowlists, etc.).</li>
+      <li><strong>Optional crash dumps</strong> — local files under <code>%LOCALAPPDATA%\CurDeepSeek\dumps</code> for diagnostics; not uploaded by the app.</li>
+      <li><strong>Workspace files</strong> — edited only in folders you open; the app does not host a CurDeepSeek cloud account.</li>
+    </ul>
+
+    <h2>Data that leaves your device</h2>
+    <ul>
+      <li><strong>DeepSeek API</strong> — When AI features are used, request content (prompts, relevant context you allow the agent/tools to send) and model responses go to DeepSeek over HTTPS. Treat that traffic under DeepSeek’s own terms and privacy policy.</li>
+      <li><strong>Optional update checks</strong> — Non-Store / sideload builds may check an HTTPS update feed you configure (or the default lab feed). That is separate from Microsoft Store update distribution.</li>
+      <li><strong>Optional MCP servers</strong> — If you configure Model Context Protocol servers, those connections use the endpoints you choose; CurDeepSeek does not invent a telemetry backend for them.</li>
+    </ul>
+
+    <h2>What we do not claim</h2>
+    <ul>
+      <li>No CurDeepSeek-operated analytics / telemetry pipeline is part of the default product behavior described in the Store listing.</li>
+      <li>Crash dumps and Export Diagnostics stay local unless <strong>you</strong> explicitly export and share them.</li>
+      <li>There is no CurDeepSeek cloud account; the optional credential is your DeepSeek API key on this machine.</li>
+    </ul>
+
+    <h2>Deleting local data</h2>
+    <p>
+      Close the app, then remove <code>%LOCALAPPDATA%\CurDeepSeek</code> (and clear the Windows Credential Manager entry for the DeepSeek API key if you want the key gone).
+      Revoke or rotate the API key at your DeepSeek provider dashboard if it may have been exposed.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      CurDeepSeek is a developer productivity tool. It is not directed at children. See the Store age rating questionnaire answers for market-specific ratings.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy questions about this product listing, use the
+      <a href="support.html">support page</a> contact options once this site is hosted on a public HTTPS URL.
+    </p>
+
+    <footer>
+      CurDeepSeek · Privacy policy for Store listing · Host this file over HTTPS before pasting the URL into Partner Center.
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CurDeepSeek — Store listing pages</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --ink: #1a1c1e;
+      --muted: #4a5058;
+      --line: #d5d0c6;
+      --accent: #0b5fff;
+      --card: #fffefb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Candara", "Calibri", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e8f0ff 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #efe8d8 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: clamp(1.85rem, 3.2vw, 2.4rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .lede { color: var(--muted); margin: 0 0 1.75rem; max-width: 36rem; }
+    .links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 1rem 1.1rem;
+    }
+    .links a:hover { border-color: var(--accent); }
+    .links strong { color: var(--accent); }
+    .links span { display: block; color: var(--muted); font-size: 0.92rem; margin-top: 0.25rem; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CurDeepSeek</h1>
+    <p class="lede">
+      Static privacy and support pages for the Microsoft Store listing.
+      Claims match the product: DeepSeek API key stays local; no invented telemetry.
+    </p>
+    <ul class="links">
+      <li>
+        <a href="privacy.html">
+          <strong>Privacy policy</strong>
+          <span>Local Credential Manager key, SQLite settings, DeepSeek API when AI is used.</span>
+        </a>
+      </li>
+      <li>
+        <a href="support.html">
+          <strong>Support</strong>
+          <span>Contact + troubleshooting pointers for Store customers.</span>
+        </a>
+      </li>
+    </ul>
+    <footer>
+      Host via GitHub Pages or any HTTPS static host — see <a href="README.md">README.md</a>.
+      Pages alone do not close the Store human gate.
+    </footer>
+  </main>
+</body>
+</html>

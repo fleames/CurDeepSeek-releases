@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CurDeepSeek — Support</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --ink: #1a1c1e;
+      --muted: #4a5058;
+      --line: #d5d0c6;
+      --accent: #0b5fff;
+      --card: #fffefb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Candara", "Calibri", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e8f0ff 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #efe8d8 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .lede { color: var(--muted); margin: 0 0 1.75rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1.25rem;
+    }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    .meta {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.35rem 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
+    nav a { margin-right: 1rem; }
+    code, .path {
+      font-family: Consolas, "Cascadia Mono", monospace;
+      font-size: 0.92em;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p class="meta">Last updated: 2026-10-09 · Product: CurDeepSeek (Windows desktop)</p>
+    <h1>Support</h1>
+    <p class="lede">
+      Help for CurDeepSeek — a DeepSeek-native Windows AI coding environment
+      (folder workspace, agent, diffs, terminal, Git). This page is intended as the
+      Microsoft Store support / contact URL once hosted on public HTTPS.
+    </p>
+
+    <h2>Before you contact us</h2>
+    <ul>
+      <li>Confirm a <strong>DeepSeek API key</strong> is set under Settings → API (stored locally in Windows Credential Manager).</li>
+      <li>Note your app version (Settings → About) and Windows edition (x64 / ARM64).</li>
+      <li>Use Settings → About → <strong>Export diagnostics</strong> if you need a local zip for troubleshooting (secrets are scrubbed from text; dumps stay local unless you share them).</li>
+    </ul>
+
+    <h2>Common topics</h2>
+    <ul>
+      <li><strong>API / AI features</strong> — Chat, agent, Composer, and Ctrl+K require a valid DeepSeek API key and network access to the configured API host.</li>
+      <li><strong>Permissions</strong> — Destructive or remote git/shell actions may prompt; default is deny without an allowlist entry.</li>
+      <li><strong>Updates</strong> — Microsoft Store builds update through the Store. Sideload / lab HTTPS feeds are a separate channel and are not the Store support path.</li>
+      <li><strong>Privacy</strong> — See the <a href="privacy.html">privacy policy</a> (local key, no invented telemetry).</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>
+      After you publish this folder to GitHub Pages or another HTTPS host, replace the placeholder below
+      with a monitored channel you actually read (GitHub Issues on your public support repo, or a mailto you monitor):
+    </p>
+    <ul>
+      <li>Issues / tracker: <span class="path">REPLACE_WITH_MONITORED_ISSUES_OR_EMAIL</span></li>
+      <li>Privacy questions: same contact, subject line starting with <code>Privacy:</code></li>
+    </ul>
+    <p>
+      Do not paste this page’s file:// path into Partner Center. Partner Center needs a reachable
+      <strong>https://</strong> URL (see <a href="README.md">hosting README</a>).
+    </p>
+
+    <h2>What support cannot do for you</h2>
+    <ul>
+      <li>Partner Center enrollment, Store association, or certification submit (publisher / human gate).</li>
+      <li>Azure Trusted Signing or commercial code-signing enrollment.</li>
+      <li>Recovering a DeepSeek API key — rotate it at the provider if lost or exposed.</li>
+    </ul>
+
+    <footer>
+      CurDeepSeek · Support page for Store listing · Host over HTTPS before Partner Center paste.
+    </footer>
+  </main>
+</body>
+</html>
